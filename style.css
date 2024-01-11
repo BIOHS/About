@@ -334,115 +334,69 @@ body{
   outline: none;
 }
 /* Two image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: center;
-  width: 43%;
-  padding: 10px;
-}
-
-.pixo {
-  text-align: center;
-  font-size: 1.7em;
-  color: white;
-}
-
-input {
-  display: none;
-}
-.panel-heading { 
-  margin: 0;
-  padding: 20px;
-  width: 100%;
-  color:purple;
-}
-
-.panel-heading a:after {
-    font-family:'Glyphicons Halflings';
-    content:"\e114";
-    font-size:14px;
-    float: right;
-    top:35px;
-    color: purple;
-    font-weight:normal;
-    position:absolute;
-}
-.panel-heading a.collapsed:after {
-  content:"\e080";
-}
-
-h4.panel-title {
-  font-size:25px;
-  font-family: 'Droid Serif', serif;
-  a {
-    color: purple;
-    text-decoration:none;
+  .column {
+    float: center;
+    width: 43%;
+    padding: 10px;
   }
-}
-
-.panel  {
-  background-color:#080036;
-  display: block;
-  cursor: pointer;
-  padding: 10px 10px 10px 30px;
-  position: relative;
-  user-select: none;
- }
-.panel::before {
-    content: "";
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent transparent 
-  transparent rgb(255, 255, 255);
-    height: 0;
-    font-size: 0;
-    position: absolute;
-    top: 18px;
-    left: 10px;
-    transition: transform 0.5s;
-    transform-origin: 3px center;
-    color: blueviolet;
-}
-.panel-group {
-  .panel+.panel {
-      margin-top: 0px;
-  }
-  .panel-default{
-    border-top:transparent;    
-  }
-}
-.panel-body {
-  padding:25px;
-  background-color: #46456c;
-  opacity: 1;
-  height: auto;
-  }
-  .row0{
-    display: flex;
-    width: 100%;
+  
+  .pixo {
+    text-align: center;
+    font-size: 1.7em;
     color: white;
-    font-size: 26px;
-    overflow: hidden;
-    opacity: 0;
   }
-  .row0::before {
-    content: "";
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent transparent 
-  transparent rgb(255, 255, 255);
-    height: 0;
-    font-size: 0;
-    position: absolute;
-    top: 18px;
-    left: 10px;
-    transition: transform 0.5s;
-    transform-origin: 3px center;
-    color: blueviolet;
-}
-input:checked ~ label::before {
-    transform: rotate(90deg);
-    color: aquamarine;
-
+  
+  
+  .panel-heading { 
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    color:purple;
+  }
+  
+  .panel-heading a:after {
+      font-family:'Glyphicons Halflings';
+      content:"\e114";
+      font-size:14px;
+      float: right;
+      top:35px;
+      color: purple;
+      font-weight:normal;
+      position:absolute;
+  }
+  .panel-heading a.collapsed:after {
+    content:"\e080";
+  }
+  
+  h4.panel-title {
+    font-size:25px;
+    font-family: 'Droid Serif', serif;
+    a {
+      color: purple;
+      text-decoration:none;
+    }
+  }
+  
+  .panel  {
+    background-color:#080036;
+   }
+  .panel-group {
+    .panel+.panel {
+        margin-top: 0px;
+    }
+    .panel-default{
+      border-top:transparent;    
+    }
+  }
+  .panel-body {
+    padding:25px;
+    background-color: #46456c;
+    }
+    .row0{
+      display: flex;
+      width: 100%;
+      color: white;
+    }
 
 /* Footer CSS */
 *{
